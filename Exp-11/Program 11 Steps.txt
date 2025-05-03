@@ -1,0 +1,58 @@
+1. Prerequisites
+Make sure you have the following installed:
+	Node.js (includes npm)
+	Code editor like VS Code
+	node -v
+	npm -v
+2. Create React App
+Use Create React App to bootstrap the project:
+	npx create-react-app spa_react_exp11
+	cd spa_react_exp11
+
+3. Create Folder Structure
+Inside the src folder:
+	mkdir -p src/assets
+	mkdir -p src/templates
+4. Create Components
+Create files inside src/templates/:
+	Home.js
+	Profile.js
+	ContactUs.js
+	Layout.js
+5. Setup Routing
+Install React Router:
+	npm install react-router-dom
+	
+7. Run the App
+	npm start
+8. (Optional) Add Assets
+Place images like logos in src/assets and reference them like:
+	import logo from '../assets/logo.png';
+
+├── spa_react_exp11/
+│   ├── package-lock.json
+│   ├── package.json
+│   ├── README.md
+│   ├── public/
+│   │   ├── favicon.ico
+│   │   ├── index.html
+│   │   ├── logo192.png
+│   │   ├── logo512.png
+│   │   ├── manifest.json
+│   │   ├── robots.txt
+│   ├── src/
+│   │   ├── App.css
+│   │   ├── App.js
+│   │   ├── App.test.js
+│   │   ├── index.css
+│   │   ├── index.js
+│   │   ├── logo.svg
+│   │   ├── reportWebVitals.js
+│   │   ├── setupTests.js
+│   │   ├── assets/
+│   │   │   ├── logo.png
+│   │   ├── templates/
+│   │   │   ├── ContactUs.js
+│   │   │   ├── Home.js
+│   │   │   ├── Layout.js
+│   │   │   ├── Profile.js

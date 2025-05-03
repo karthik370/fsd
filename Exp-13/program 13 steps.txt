@@ -1,0 +1,43 @@
+Program 13 record steps:
+-------------------------
+1) py -m venv venv
+
+2) .\venv\scripts\activate
+
+3) pip install Django 
+
+4) django-admin startproject menuItems
+
+5) pip freeze > requirements.txt
+
+6) cd menuItems
+
+settings.py
+1) import os
+2) installed apps=> 'rest_framework','base'
+3) templates => DIRS=> os.path.join(BASE_DIR,'templates')
+
+
+Exp-13/
+│
+├── venv/                       ← Virtual environment (not pushed to Git)
+│
+├── templates/   
+│     ├── home.html
+│     ├── dashboard.html
+│     ├── contactUs.html
+│
+├── menuItems/                   ← Project configuration
+│   ├── __init__.py
+│   ├── settings.py
+│   ├── urls.py
+│   ├── index.py
+│   ├── asgi.py
+│   ├── wsgi.py
+│
+│
+├── manage.py                   ← Django CLI tool
+├── db.sqlite3                  ← Default DB (can be changed)
+├── requirements.txt            ← Track installed packages
+
+8) py manage.py runserver
